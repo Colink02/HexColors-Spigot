@@ -1,7 +1,7 @@
 # HexColors-Spigot
 
 Required Maven Dependencies
-```
+```xml
 <repositories>
   <repository>
     <id>bungeecord-repo</id>
