@@ -7,8 +7,8 @@ Required Maven Dependencies
 ```xml
 <repositories>
   <repository>
-    <id>bungeecord-repo</id>
-    <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+    <id>spigot-repo</id>
+    <url>https://hub.spigotmc.org/nexus/content/repositories/snapshots/</url>
   </repository>
  </repositories>
  <dependencies>
