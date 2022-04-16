@@ -40,5 +40,24 @@ public class ColoredStringUtil {
         }
         return input;
     }
+    
+    public static String rainbowText(String message) {
+        StringBuilder finalizedMessage = new StringBuilder();
+        int hue = 0;
+        for(int messageChar = 0; messageChar < message.toCharArray().length; messageChar++) {
+            Color color = Color.getHSBColor(((float)hue/360), 1f, 1f);
+            String red = Integer.toHexString(color.getRed());
+            String green = Integer.toHexString(color.getGreen());
+            String blue = Integer.toHexString(color.getBlue());
+
+
+            String hexColor = "&#" + (red.length() <= 2 ? StringUtils.repeat( "0",2-red.length()) + red : red) +
+                    (green.length() <= 2 ? StringUtils.repeat( "0",2-green.length()) + green : green) +
+                    (blue.length() <= 2 ? StringUtils.repeat( "0",2-blue.length()) + blue : blue);
+            finalizedMessage.append(hexColor).append(message.toCharArray()[messageChar]);
+            hue += (360/message.toCharArray().length);
+        }
+        return colorHex(finalizedMessage.toString());
+    }
 
 }
