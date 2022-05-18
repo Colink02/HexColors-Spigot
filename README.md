@@ -19,6 +19,7 @@ Required Maven Dependencies
     <scope>provided</scope>
   </dependency>
  </dependencies>
+</repositories>
 ```
 Gradle
 ```gradle
