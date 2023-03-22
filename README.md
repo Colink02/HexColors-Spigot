@@ -3,7 +3,7 @@
 Simple API to implement &#FFFFFF hex codes for a colorful chatting
 
 Required Maven Dependencies
-1.18.2 (Spigot API 1.18.2 Already has bungeecord-chat as a dependency)
+1.19.4 (Spigot API 1.18.2+ already have bungeecord-chat as a dependency)
 ```xml
 <repositories>
   <repository>
@@ -15,7 +15,7 @@ Required Maven Dependencies
    <dependency>
     <groupId>org.spigotmc</groupId>
     <artifactId>spigot-api</artifactId>
-    <version>1.18.2-R0.1-SNAPSHOT</version>
+    <version>1.19.4-R0.1-SNAPSHOT</version>
     <scope>provided</scope>
   </dependency>
  </dependencies>
@@ -33,6 +33,6 @@ repositories {
     }
 }
 dependencies {
-  compileOnly 'org.spigotmc:spigot-api:1.18.2-R0.1-SNAPSHOT'
+  compileOnly 'org.spigotmc:spigot-api:1.19.4-R0.1-SNAPSHOT'
 }
 ```
